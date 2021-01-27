@@ -1,0 +1,12 @@
+logging:
+  level:
+    sql: debug
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update #Otherwise hibernate overrides the database everytime it restarts
+      properties:
+        hibernate.format_sql: true
+
